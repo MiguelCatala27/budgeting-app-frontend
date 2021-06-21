@@ -7,7 +7,6 @@ import Index from "./Pages/Index";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
 import Edit from "./Pages/Edit";
-import ComingSoon from "./Pages/ComingSoon";
 import { apiURL } from "./Budgetapi/apiURL";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -84,9 +83,6 @@ const App = () => {
         </Route>
         <Route exact path="/transactions/:id/edit">
           <Edit updateTransaction={updateTransaction} />
-        </Route>
-        <Route exact path="/coming-soon">
-          <ComingSoon />
         </Route>
         <Route path="*">
           <FoF />

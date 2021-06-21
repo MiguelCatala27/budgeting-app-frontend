@@ -5,7 +5,7 @@ import uuid from "react-uuid";
 
 
 
-const TransNewForm = (props) => {
+const TransactionNew = (props) => {
   let history = useHistory();
   const [transaction, setTransaction] = useState({
     id: uuid(),
@@ -85,4 +85,4 @@ const TransNewForm = (props) => {
   );
 };
 
-export default TransNewForm;
+export default TransactionNew;

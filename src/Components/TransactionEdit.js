@@ -5,7 +5,7 @@ import { apiURL } from "../Budgetapi/apiURL";
 
 const API = apiURL();
 
-const TransEditForm = ({ updateTransaction }) => {
+const TransactionEditForm = ({ updateTransaction }) => {
   let { id } = useParams();
   let history = useHistory();
   const [transaction, setTransaction] = useState({
@@ -97,4 +97,4 @@ const TransEditForm = ({ updateTransaction }) => {
   );
 };
 
-export default TransEditForm;
+export default TransactionEditForm;

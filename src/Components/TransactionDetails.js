@@ -7,7 +7,7 @@ import "../App.css";
 
 const API = apiURL();
 
-const TransDetail = ({ deleteTransaction }) => {
+const TransactionDetails = ({ deleteTransaction }) => {
   const [transaction, setTransaction] = useState({});
   const { id } = useParams();
   let history = useHistory();
@@ -57,4 +57,4 @@ const TransDetail = ({ deleteTransaction }) => {
   );
 };
 
-export default TransDetail;
+export default TransactionDetails;

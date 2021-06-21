@@ -1,10 +1,10 @@
-import TransNewForm from "../Components/TransactionNew";
+import TransactionNew from "../Components/TransactionNew";
 
 const New = ({addTransaction}) => {
   return (
     <section className="New">
       <h2>Add a new item</h2>
-      <TransNewForm addTransaction={addTransaction}/>
+      <TransactionNew addTransaction={addTransaction}/>
     </section>
   );
 };
